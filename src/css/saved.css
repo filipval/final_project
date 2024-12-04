@@ -1,0 +1,22 @@
+main {
+  padding: 30px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.saved-films {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.saved-films__grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}

@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/variables.css" />
-    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <title>Film Library</title>
@@ -13,39 +17,82 @@
   <body>
     <!-- Header -->
     <header>
-      <h1>FILM LIBRARY</h1>
-      <a href="./search.html">SEARCH</a>
-      <a href="./index.html">DISCOVER</a>
-      <a href="./all-films.html">ALL FILMS</a>
-      <a href="./saved.html">SAVED</a>
+      <nav class="navbar">
+        <!-- Navbar Logo -->
+        <div class="navbar__logo-container">
+          <a class="navbar__logo" href="./index.html"><h1>FILM LIBRARY</h1></a>
+        </div>
+        <!-- Navbar Links -->
+        <div class="navbar__links-container">
+          <ul class="navbar__links">
+            <li class="navbar__link">
+              <a href="./search.html">SEARCH</a>
+            </li>
+            <li class="navbar__link navbar__link--active">
+              <a href="./index.html">DISCOVER</a>
+            </li>
+            <li class="navbar__link">
+              <a href="./all-films.html">ALL FILMS</a>
+            </li>
+            <li class="navbar__link"><a href="./saved.html">SAVED</a></li>
+          </ul>
+        </div>
+        <!-- Toggle -->
+        <div class="navbar__toggle-button-container">
+          <button class="navbar__toggle-button">
+            <i class="fa-solid fa-bars fa-2x navbar__toggle-logo"></i>
+          </button>
+        </div>
+      </nav>
     </header>
     <!-- Main -->
     <main>
       <!-- Hero Image -->
       <section class="hero">
-        <img src="" alt="" />
+        <img
+          src="./assets/images/the-piano-teacher.jpg"
+          alt="the piano teacher"
+        />
       </section>
       <!-- Discover Section -->
       <section class="discover">
-        <!-- Recommended -->
-        <div class="discover__recommended">
+        <!-- Recommended Category -->
+        <div class="category-section">
           <h2>Recommended</h2>
+          <div class="films">
+            <div class="carousel" id="recommended-carousel"></div>
+          </div>
         </div>
-        <!-- New Releases -->
-        <div class="discover__new-releases">
+        <!-- New Releases Category -->
+        <div class="category-section">
           <h2>New Releases</h2>
+          <div class="films">
+            <div class="carousel" id="new-releases-carousel"></div>
+          </div>
         </div>
-        <!-- Highlighted Movie -->
-        <div class="discover__movie-highlight">
-          <p>Movie Highlight</p>
+        <!-- Highlighted Film -->
+        <div class="discover__film-highlight">
+          <div class="films__cards--highlight">
+            <img
+              src="https://image.tmdb.org/t/p/original/vQNknPEVSAui6IL6eUlDBPfUzcW.jpg"
+              alt="crash"
+            />
+            <p>CRASH</p>
+          </div>
         </div>
-        <!-- Top Rated -->
-        <div class="discover__top-rated">
+        <!-- Top Rated Category -->
+        <div class="category-section">
           <h2>Top Rated</h2>
+          <div class="films">
+            <div class="carousel" id="top-rated-carousel"></div>
+          </div>
         </div>
-        <!-- Sorted A - Z -->
-        <div class="discover__a-z">
+        <!-- A - Z Category -->
+        <div class="category-section">
           <h2>A - Z</h2>
+          <div class="films">
+            <div class="carousel" id="a-z-carousel"></div>
+          </div>
         </div>
       </section>
     </main>

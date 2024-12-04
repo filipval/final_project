@@ -3,32 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/variables.css" />
-    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/search.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <title>Search Films</title>
   </head>
   <body>
     <!-- Header -->
     <header>
-      <h1>FILM LIBRARY</h1>
-      <a href="./search.html">SEARCH</a>
-      <a href="./index.html">DISCOVER</a>
-      <a href="./all-films.html">ALL FILMS</a>
-      <a href="./saved.html">SAVED</a>
+      <nav class="navbar">
+        <!-- Navbar Logo -->
+        <div class="navbar__logo-container">
+          <a class="navbar__logo" href="./index.html"><h1>FILM LIBRARY</h1></a>
+        </div>
+        <!-- Navbar Links -->
+        <div class="navbar__links-container">
+          <ul class="navbar__links">
+            <li class="navbar__link navbar__link--active">
+              <a href="./search.html">SEARCH</a>
+            </li>
+            <li class="navbar__link">
+              <a href="./index.html">DISCOVER</a>
+            </li>
+            <li class="navbar__link">
+              <a href="./all-films.html">ALL FILMS</a>
+            </li>
+            <li class="navbar__link"><a href="./saved.html">SAVED</a></li>
+          </ul>
+        </div>
+        <!-- Toggle -->
+        <div class="navbar__toggle-button-container">
+          <button class="navbar__toggle-button">
+            <i class="fa-solid fa-bars fa-2x navbar__toggle-logo"></i>
+          </button>
+        </div>
+      </nav>
     </header>
     <!-- Main -->
     <main>
       <!-- Search Bar -->
-      <div class="search">
-        <input
-          type="search"
-          id="search"
-          class="search__input"
-          placeholder="Search"
-        />
+      <div class="search__container">
+        <div class="search">
+          <label for="search"
+            ><i class="fa-solid fa-magnifying-glass search-logo"></i
+          ></label>
+          <input
+            type="search"
+            id="search"
+            class="search__input"
+            placeholder="Search"
+          />
+        </div>
         <p>START TYPING TO SEE RESULTS</p>
       </div>
       <!-- Search Results -->

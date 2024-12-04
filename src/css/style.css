@@ -1,8 +1,122 @@
+@font-face {
+  font-family: JetBrains;
+  src: url(../assets/fonts/JetBrainsMono-VariableFont_wght.ttf);
+}
+
+/* Main Styling */
 body {
-  height: 100vh;
-  background-color: pink;
+  min-width: 340px;
+  width: 100%;
+  background-color: var(--color-black);
+  height: 100%;
 }
 
 main {
-  background-color: blue;
+  padding-top: 90px;
+  background-color: var(--color-black);
+  font-family: Helvetica, sans-serif;
+  color: var(--color-white);
+}
+
+/* Discover Page Styling */
+.hero img {
+  width: 100%;
+  object-fit: cover;
+  padding: none;
+}
+
+.discover {
+  padding: 50px 30px;
+}
+
+.category-section h2 {
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+/* Films and Carousel Styling */
+.films__cards-container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.carousel {
+  display: flex;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 30px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.film__card,
+.film__card img {
+  height: 290px;
+  width: 440px;
+  border: none;
+  border-radius: 16px;
+  object-fit: cover;
+  margin-bottom: 40px;
+  position: relative;
+  color: transparent;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.3s ease;
+  flex-shrink: 0;
+}
+
+.film__card p {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.film__card:hover {
+  color: var(--color-white);
+  font-family: JetBrains;
+  transition: ease;
+}
+
+.film__card img:hover {
+  filter: brightness(50%);
+}
+
+/* Highlighted Movie */
+.films__cards--highlight,
+.films__cards--highlight img {
+  height: 700px;
+  width: 100%;
+  border: none;
+  border-radius: 16px;
+  object-fit: cover;
+  margin-bottom: 30px;
+  position: relative;
+  color: transparent;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.films__cards--highlight p {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.films__cards--highlight:hover {
+  color: var(--color-white);
+  font-family: JetBrains;
+}
+
+.films__cards--highlight img:hover {
+  filter: brightness(50%);
 }

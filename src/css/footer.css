@@ -1,3 +1,16 @@
+@font-face {
+  font-family: JetBrains;
+  src: url(../assets/fonts/JetBrainsMono-VariableFont_wght.ttf);
+}
+
 footer {
-  background-color: red;
+  width: 100%;
+  background-color: var(--color-black);
+  padding: 30px;
+}
+
+footer h3 {
+  color: var(--color-white);
+  font-family: JetBrains;
+  font-weight: 300;
 }

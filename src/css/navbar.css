@@ -1,0 +1,121 @@
+@font-face {
+  font-family: JetBrains;
+  src: url(../assets/fonts/JetBrainsMono-VariableFont_wght.ttf);
+}
+
+header {
+  width: 100%;
+}
+
+.navbar {
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 30px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  position: fixed;
+}
+
+.navbar__logo-container {
+  font-family: JetBrains;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__logo {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.navbar__logo h1 {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.navbar__links-container {
+  flex-grow: 1;
+}
+
+.navbar__links {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar__links a {
+  color: inherit;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.navbar__links a:hover {
+  font-style: italic;
+}
+
+.navbar__link--active {
+  font-style: italic;
+}
+
+.navbar__toggle-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__toggle-button {
+  visibility: hidden;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.navbar__toggle-logo {
+  display: block;
+  color: var(--color-white);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .navbar__toggle-logo {
+    visibility: visible;
+    color: var(--color-white);
+  }
+
+  .navbar__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-black);
+    z-index: 1000;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: -1000px;
+    width: 50%;
+    flex-direction: column;
+    transition: 1s;
+    overflow: hidden;
+  }
+
+  .navbar__link--active {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .navbar__links {
+    width: 100%;
+  }
+
+  .navbar__toggle-button {
+    z-index: 1;
+  }
+}
