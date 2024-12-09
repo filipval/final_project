@@ -29,4 +29,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-If you have any questions, contact my email: filipvalderhaug@icloud.com
+If you have any questions, contact me on email: filipvalderhaug@icloud.com
