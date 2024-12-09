@@ -40,7 +40,7 @@
             </li>
           </ul>
         </div>
-        <!-- Toggle -->
+        <!-- Navbar Toggle -->
         <div class="navbar__toggle-button-container">
           <button class="navbar__toggle-button">
             <i class="fa-solid fa-bars fa-2x navbar__toggle-logo"></i>
@@ -50,53 +50,30 @@
     </header>
     <!-- Main -->
     <main>
-      <h2 class="saved-films__title">Saved Films</h2>
-      <div class="saved-films">
-        <div class="saved-films__grid-container">
-          <button class="films__button">
-            <img
-              src="https://image.tmdb.org/t/p/original/wbgNUxSPbfxyFfHhdd9GZyepsiK.jpg"
-              alt="possession"
-            />
-            <p>POSSESSION</p>
-          </button>
-          <button class="films__button">
-            <img
-              src="https://image.tmdb.org/t/p/original/wbgNUxSPbfxyFfHhdd9GZyepsiK.jpg"
-              alt="possession"
-            />
-            <p>POSSESSION</p>
-          </button>
-          <button class="films__button">
-            <img
-              src="https://image.tmdb.org/t/p/original/wbgNUxSPbfxyFfHhdd9GZyepsiK.jpg"
-              alt="possession"
-            />
-            <p>POSSESSION</p>
-          </button>
-          <button class="films__button">
-            <img
-              src="https://image.tmdb.org/t/p/original/wbgNUxSPbfxyFfHhdd9GZyepsiK.jpg"
-              alt="possession"
-            />
-            <p>POSSESSION</p>
-          </button>
-          <button class="films__button">
-            <img
-              src="https://image.tmdb.org/t/p/original/wbgNUxSPbfxyFfHhdd9GZyepsiK.jpg"
-              alt="possession"
-            />
-            <p>POSSESSION</p>
-          </button>
-          <button class="films__button">
-            <img
-              src="https://image.tmdb.org/t/p/original/wbgNUxSPbfxyFfHhdd9GZyepsiK.jpg"
-              alt="possession"
-            />
-            <p>POSSESSION</p>
-          </button>
-        </div>
+      <!-- Saved Films Grid -->
+      <div class="saved__films">
+        <h2 class="saved-films__title">Saved Films</h2>
+        <div class="saved-films__grid-container"></div>
       </div>
+      <!-- Film Modal -->
+      <section class="modal__container">
+        <div class="modal">
+          <div class="modal__image">
+            <img src="" alt="" />
+          </div>
+          <div class="modal__content">
+            <h1 class="modal__content--title"></h1>
+            <button class="modal__close-btn">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <p class="modal__content--director"></p>
+            <p class="modal__content--tagline"><i></i></p>
+            <p class="modal__content--description"></p>
+            <p class="modal__content--details"></p>
+            <button class="modal__content--save-btn">SAVE</button>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Footer -->
     <footer><h3>© FILM LIBRARY</h3></footer>

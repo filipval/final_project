@@ -3,6 +3,7 @@
   src: url(../assets/fonts/JetBrainsMono-VariableFont_wght.ttf);
 }
 
+/* Navbar Styling */
 header {
   width: 100%;
 }
@@ -14,12 +15,13 @@ header {
   align-items: center;
   background-color: var(--color-black);
   color: var(--color-white);
-  padding: 30px;
+  padding: var(--spacing-medium);
   font-family: Helvetica, sans-serif;
   font-weight: 300;
   position: fixed;
 }
 
+/* Navbar Logo Styling */
 .navbar__logo-container {
   font-family: JetBrains;
   display: flex;
@@ -34,9 +36,10 @@ header {
 
 .navbar__logo h1 {
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: var(--font-size-large);
 }
 
+/* Navbar Links Styling */
 .navbar__links-container {
   flex-grow: 1;
 }
@@ -46,12 +49,12 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 2rem;
+  gap: var(--spacing-medium);
 }
 
 .navbar__links a {
   color: inherit;
-  font-size: 15px;
+  font-size: var(--font-size-small);
   text-decoration: none;
 }
 
@@ -63,6 +66,7 @@ header {
   font-style: italic;
 }
 
+/* Navbar Toggle Styling */
 .navbar__toggle-button-container {
   display: flex;
   justify-content: center;
@@ -83,7 +87,8 @@ header {
 }
 
 /* Media Queries */
-@media screen and (max-width: 768px) {
+/* Tablet */
+@media screen and (max-width: 820px) {
   .navbar__toggle-logo {
     visibility: visible;
     color: var(--color-white);
@@ -95,7 +100,7 @@ header {
     justify-content: center;
     background-color: var(--color-black);
     z-index: 1000;
-    height: 1000px;
+    height: 100vh;
     position: absolute;
     top: 0;
     left: -1000px;
@@ -103,6 +108,7 @@ header {
     flex-direction: column;
     transition: 1s;
     overflow: hidden;
+    font-style: normal;
   }
 
   .navbar__link--active {
@@ -110,7 +116,8 @@ header {
   }
 }
 
-@media screen and (max-width: 580px) {
+/* Mobile */
+@media screen and (max-width: 430px) {
   .navbar__links {
     width: 100%;
   }

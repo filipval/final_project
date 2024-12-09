@@ -37,7 +37,7 @@
             <li class="navbar__link"><a href="./saved.html">SAVED</a></li>
           </ul>
         </div>
-        <!-- Toggle -->
+        <!-- Navbar Toggle -->
         <div class="navbar__toggle-button-container">
           <button class="navbar__toggle-button">
             <i class="fa-solid fa-bars fa-2x navbar__toggle-logo"></i>
@@ -47,12 +47,15 @@
     </header>
     <!-- Main -->
     <main>
-      <!-- Hero Image -->
+      <!-- Hero Section -->
       <section class="hero">
-        <img
-          src="./assets/images/the-piano-teacher.jpg"
-          alt="the piano teacher"
-        />
+        <div class="hero__title">
+          <h2>FILM LIBRARY</h2>
+        </div>
+        <div class="hero__content">
+          <p>HIGHLIGHTED FILM:</p>
+          <h2>THE PIANO TEACHER</h2>
+        </div>
       </section>
       <!-- Discover Section -->
       <section class="discover">
@@ -89,11 +92,33 @@
         </div>
         <!-- A - Z Category -->
         <div class="category-section">
-          <h2>A - Z</h2>
+          <h2>Classics</h2>
           <div class="films">
-            <div class="carousel" id="a-z-carousel"></div>
+            <div class="carousel" id="classics-carousel"></div>
           </div>
         </div>
+      </section>
+      <!-- Film Modal -->
+      <section class="modal__container">
+        <div class="modal">
+          <div class="modal__image">
+            <img src="" alt="" />
+          </div>
+          <div class="modal__content">
+            <h1 class="modal__content--title"></h1>
+            <button class="modal__close-btn">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <p class="modal__content--director"></p>
+            <p class="modal__content--tagline">
+              <i></i>
+            </p>
+            <p class="modal__content--description">
+
+            </p>
+            <p class="modal__content--details"></p>
+            <button class="modal__content--save-btn">SAVE</button>
+          </div>
       </section>
     </main>
     <!-- Footer -->

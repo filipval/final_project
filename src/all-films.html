@@ -38,7 +38,7 @@
             <li class="navbar__link"><a href="./saved.html">SAVED</a></li>
           </ul>
         </div>
-        <!-- Toggle -->
+        <!-- Navbar Toggle -->
         <div class="navbar__toggle-button-container">
           <button class="navbar__toggle-button">
             <i class="fa-solid fa-bars fa-2x navbar__toggle-logo"></i>
@@ -50,41 +50,63 @@
     <main>
       <section class="all-films">
         <div class="all-films__cards-container">
-          <h2>All Films</h2>
-          <!-- Sort Button -->
-          <select name="" id="">
-            <option value="">Sort By</option>
-            <option value="title">Title</option>
-            <option value="director">Director</option>
-            <option value="country">Country</option>
-            <option value="year">Year</option>
-          </select>
-          <button>Sort</button>
-          <!-- Filter Button -->
-          <select name="" id="">
-            <option value="">Filter By</option>
-            <option value="">?</option>
-            <option value="">?</option>
-            <option value="">?</option>
-            <option value="">?</option>
-          </select>
-          <button>Filter</button>
+          <div class="controls__container">
+            <h2 class="all-films__title">All Films</h2>
+            <div class="controls">
+              <!-- Sort Films -->
+              <select id="sortSelect">
+                <option value="title">SORT</option>
+                <option value="title">TITLE</option>
+                <option value="director">DIRECTOR</option>
+                <option value="country">COUNTRY</option>
+                <option value="year">YEAR</option>
+                <option value="rating">RATING</option>
+              </select>
+              <!-- Filter Films -->
+              <select id="filterSelect">
+                <option value="all">FILTER</option>
+                <option value="crime">CRIME</option>
+                <option value="history">HISTORY</option>
+                <option value="documentary">DOCUMENTARY</option>
+                <option value="drama">DRAMA</option>
+                <option value="horror">HORROR</option>
+                <option value="mystery">MYSTERY</option>
+                <option value="music">MUSIC</option>
+              </select>
+            </div>
+          </div>
           <!-- Card Description -->
           <hr />
-          <p>TITLE</p>
-          <p>DIRECTOR</p>
-          <p>COUNTRY</p>
-          <p>YEAR</p>
-          <!-- Film Card -->
-          <article class="all-films__card">
-            <img src="" alt="" />
-            <div class="card__content">
-              <h3>Film Title</h3>
-              <p>Film Director</p>
-              <p>Film Country</p>
-              <p>Film Year</p>
+          <div class="films__details">
+            <span></span>
+            <p>TITLE</p>
+            <p>DIRECTOR</p>
+            <p>COUNTRY</p>
+            <p>YEAR</p>
+          </div>
+          <!-- Container for All Films -->
+          <section class="all-films">
+            <div id="all-films-container" class="films__cards-container"></div>
+          </section>
+          <!-- Film Modal -->
+          <section class="modal__container">
+            <div class="modal">
+              <div class="modal__image">
+                <img src="" alt="" />
+              </div>
+              <div class="modal__content">
+                <h1 class="modal__content--title"></h1>
+                <button class="modal__close-btn">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+                <p class="modal__content--director"></p>
+                <p class="modal__content--tagline"><i></i></p>
+                <p class="modal__content--description"></p>
+                <p class="modal__content--details"></p>
+                <button class="modal__content--save-btn">SAVE</button>
+              </div>
             </div>
-          </article>
+          </section>
         </div>
       </section>
     </main>

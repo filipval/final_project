@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/search.css" />
+    <link rel="stylesheet" href="./css/all-films.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <title>Search Films</title>
   </head>
@@ -38,7 +39,7 @@
             <li class="navbar__link"><a href="./saved.html">SAVED</a></li>
           </ul>
         </div>
-        <!-- Toggle -->
+        <!-- Navbar Toggle -->
         <div class="navbar__toggle-button-container">
           <button class="navbar__toggle-button">
             <i class="fa-solid fa-bars fa-2x navbar__toggle-logo"></i>
@@ -51,9 +52,9 @@
       <!-- Search Bar -->
       <div class="search__container">
         <div class="search">
-          <label for="search"
-            ><i class="fa-solid fa-magnifying-glass search-logo"></i
-          ></label>
+          <label for="search">
+            <i class="fa-solid fa-magnifying-glass search-logo"></i>
+          </label>
           <input
             type="search"
             id="search"
@@ -61,11 +62,36 @@
             placeholder="Search"
           />
         </div>
-        <p>START TYPING TO SEE RESULTS</p>
+        <p id="startTypingMessage">START TYPING TO SEE RESULTS</p>
       </div>
       <!-- Search Results -->
-      <div class="search__results"></div>
+      <div class="search__results-container">
+        <div id="search-container" class="search__results"></div>
+      </div>
+      <!-- Film Modal -->
+      <section class="modal__container">
+        <div class="modal">
+          <div class="modal__image">
+            <img src="" alt="" />
+          </div>
+          <div class="modal__content">
+            <h1 class="modal__content--title"></h1>
+            <button class="modal__close-btn">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <p class="modal__content--director"></p>
+            <p class="modal__content--tagline">
+              <i></i>
+            </p>
+            <p class="modal__content--description">
+
+            </p>
+            <p class="modal__content--details"></p>
+            <button class="modal__content--save-btn">SAVE</button>
+          </div>
+      </section>
     </main>
+
     <!-- Footer -->
     <footer><h3>© FILM LIBRARY</h3></footer>
     <script src="./js/app.js"></script>

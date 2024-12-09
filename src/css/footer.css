@@ -6,7 +6,7 @@
 footer {
   width: 100%;
   background-color: var(--color-black);
-  padding: 30px;
+  padding: var(--spacing-medium);
 }
 
 footer h3 {
