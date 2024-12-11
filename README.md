@@ -10,9 +10,13 @@ To use the Film Library, open the Netlify link (below), scroll through the film 
 ## Features
 
 Discover films through the discover page.
+
 Save films in the Saved page.
+
 Saved films are saved in the browsers local storage.
+
 Search, sort, and filter through all the films in the library.
+
 Simple, responsive user interface.
 
 ## Netlify Deployment
